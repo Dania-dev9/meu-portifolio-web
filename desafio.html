@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+              <title>Solicitação de Férias</title>
+       
+       
+<style>
+
+    .Title{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3399ff;
+    }
+
+    .linha1{
+        display: flex;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:darkgreen;
+        font-weight: bold;
+        
+    }
+     .linha{
+        display: flex;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
+    
+    }
+
+    fieldset{
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-top: 20px;
+
+    }
+
+    legend{
+        font-weight: bold;
+        padding: 0 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .campo{
+        border: 1px solid #ccc ;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        width: 220px;
+        text-align: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .linha, .linha1{
+        display: flex;
+        gap: 20px;
+        align-items: flex-end;
+       
+    }
+
+    .aviso{
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #d9edf7;
+        border: 1px solid #bce8f1;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #31708f;
+
+    }
+</style>
+</head>
+<body>
+    <div class="Title">
+        <h1> 📅 Solicitação de Férias</h1>
+    </div>
+    
+        <form action="">
+
+    <div class="linha1">
+      
+    <div>
+        <label for=""> Colaborador </label> <br>
+        <input type="text" name="name" placeholder="Digite o nome"> 
+    </div>
+
+    <div>
+        <label for="">Data</label><br>
+        <input type="date" name="data">
+
+    </div>
+     
+    <div>
+        <label for=""> Status </label><br>
+            <select name="status" id="status">
+                <option value="aprovado">Aprovado</option>
+                <option value="pendente">Pendente</option>
+                <option value="rejeitado">Rejeitado</option>
+            </select>
+    </div>
+    </div>
+
+    <br>
+    <div class="linha">
+    <div>
+        <label for="">Departamento</label><br>
+        <input type="text" name="department" placeholder="Digite o departamento">
+    </div>
+    
+    <div>
+         <label for="">Centro de Custo</label><br>
+    <input type="text">
+    </div>
+    
+    <div>
+        <label for="">Unidade de Negócio</label><br>
+    <input type="text">
+    </div>
+    </div>
+   </form>
+   
+   <fieldset>
+    <legend> Período Aquisitivo</legend>
+
+    <div class="linha">
+        <div class="campo">
+            <label for="">Início</label><br>
+            <input type="date"><br>
+            <span class= "info">2 anos atrás</span>
+        </div>
+
+         <div class="campo">
+            <label for="">Fim</label><br>
+            <input type="date"><br>
+            <span class="info">7 meses atrás</span>
+        </div>
+
+         <div class="campo">
+            <label for="">Dias de Saldo</label><br>
+            <input type="number">
+        </div>
+         <div class="campo">
+            <label for="">Limite</label><br>
+            <input type="date">
+        </div>
+
+    </div>
+   </fieldset>
+<br>
+   <div class="linha">
+   <div>
+     <label> Início das Férias </label>
+        <input type="date">
+   </div>
+
+   <div>
+    <label for="">Dias</label>
+    <input type="number">
+   </div>
+
+   <div>
+    <label for="">Final das Férias</label>
+    <input type="date">
+   </div>
+
+   <div>
+    <label for="">Abono</label>
+    <input type="number">
+   </div>
+
+   <div>
+    <label for="">1ª Parcela do 13º Salário</label>
+    <select name="1ª Parcela do 13º Salário" id="1ª Parcela do 13º Salário">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+   </div>
+   </div>
+
+   <div class="aviso">
+    AVISO: Entregue a Carteira de Trabalho e Previdência Social do Funcionário na Adm, de Pessoal para anotações de férias.
+   </div>
